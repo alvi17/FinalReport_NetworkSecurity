@@ -1,0 +1,139 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% University Assignment Title Page 
+% LaTeX Template
+% Version 1.0 (27/12/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% WikiBooks (http://en.wikibooks.org/wiki/LaTeX/Title_Creation)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+% 
+% Instructions for using this template:
+% This title page is capable of being compiled as is. This is not useful for 
+% including it in another document. To do this, you have two options: 
+%
+% 1) Copy/paste everything between \begin{document} and \end{document} 
+% starting at \begin{titlepage} and paste this into another LaTeX file where you 
+% want your title page.
+% OR
+% 2) Remove everything outside the \begin{titlepage} and \end{titlepage} and 
+% move this file to the same directory as the LaTeX file you wish to add it to. 
+% Then add \input{./title_page_1.tex} to your LaTeX file where you want your
+% title page.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\title{Title page with logo}
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[12pt]{article}
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorinlistoftodos]{todonotes}
+
+\begin{document}
+
+\begin{titlepage}
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % Defines a new command for the horizontal lines, change thickness here
+
+\center % Center everything on the page
+
+
+\includegraphics{logo.png}\\[.1cm] % Include a department/university logo - this will require the graphicx package
+
+%----------------------------------------------------------------------------------------
+%	HEADING SECTIONS
+%----------------------------------------------------------------------------------------
+
+\text{\LARGE Department of Computer Science and Engineering}\\[1.5cm] % Name of your university/college
+
+\text{\LARGE CSE 6813 : Network Security}\\[.8cm] % Name of your university/college
+
+%
+\textsc{\Large Report on }\\[0.5cm] % Major heading such as course name
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+\HRule \\[0.4cm]
+{ \huge  Security Aspects of Smart Cards in Machine-to-Machine (M2M) Mobile Networks}\\[0.4cm] % Title of your document
+
+\HRule \\[1cm]
+ 
+%----------------------------------------------------------------------------------------
+%	AUTHOR SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}{0.5\textwidth}
+\begin{flushleft} \large
+\emph{Report Writer:}\\
+Md. Mostafizur Rahman\newline Roll: 0416052032 
+\end{flushleft}
+\end{minipage}
+~
+\begin{minipage}{0.4\textwidth}
+\begin{flushright} \large
+\emph{Submitted to:} \\
+Dr. Mahfuzur  Rahman% Supervisor's Name
+\end{flushright}
+\end{minipage}\\[1cm]
+
+
+
+% If you don't want a supervisor, uncomment the two lines below and remove the section above
+%\Large \emph{Author:}\\
+%John \textsc{Smith}\\[3cm] % Your name
+
+%----------------------------------------------------------------------------------------
+%	DATE SECTION
+%----------------------------------------------------------------------------------------
+
+{\large \today}\\[.5cm] % Date, change the \today to a set date if you want to be precise
+
+%----------------------------------------------------------------------------------------
+%	LOGO SECTION
+%----------------------------------------------------------------------------------------
+
+
+ 
+%----------------------------------------------------------------------------------------
+
+\vfill % Fill the rest of the page with whitespace
+
+\end{titlepage}
+
+\tableofcontents
+
+\newpage
+\begin{abstract}
+The advantages of utilizing smart card technology, in the machine to machine mobile networks for common usage i.e.
+health sector, transport industry etc have long been realized. With great potential and advantages also come some security concerns. Since the invention, smart card has come a long way in facilitating easy and fast transaction and authentication processes. Still, security threat remains as a major concern in deploying smart card based system specially in mobile M2M communication. Proper procedure and process must be followed to ensure security in diverse environments.
+\end{abstract}
+
+\section{Introduction}
+
+
+
+
+\newpage
+\begin{thebibliography}{9}
+\bibitem{latexcompanion} 
+E. Bonabeau, M. Dorigo, and G. Theraulaz. Swarm intelligence:
+from natural to artificial intelligence. Oxford University
+Press, 1999. ISBN 0-19-513158-4.
+ 
+\end{thebibliography}
+
+
+
+
+
+\end{document}
