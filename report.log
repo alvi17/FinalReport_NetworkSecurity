@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2017.2.24)  3 MAR 2017 00:55
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2017.2.24)  4 MAR 2017 22:16
 entering extended mode
 **report.tex
 (F:\Masters\ns_oct2016\Final_Report\report.tex
@@ -489,44 +489,77 @@ LaTeX Info: Redefining \addtolength on input line 77.
 )
 \c@@todonotes@numberoftodonotes=\count125
 )
-(F:\Masters\ns_oct2016\Final_Report\report.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\longtable.sty"
+Package: longtable 2004/02/01 v4.11 Multi-page Table package (DPC)
+\LTleft=\skip49
+\LTright=\skip50
+\LTpre=\skip51
+\LTpost=\skip52
+\LTchunksize=\count126
+\LTcapwidth=\dimen163
+\LT@head=\box39
+\LT@firsthead=\box40
+\LT@foot=\box41
+\LT@lastfoot=\box42
+\LT@cols=\count127
+\LT@rows=\count128
+\c@LT@tables=\count129
+\c@LT@chunks=\count130
+\LT@p@ftn=\toks39
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lipsum\lipsum.sty"
+Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
+\c@lips@count=\count131
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\array.sty"
+Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen164
+\extrarowheight=\dimen165
+\NC@list=\toks40
+\extratabsurround=\skip53
+\backup@length=\skip54
+)
+(F:\Masters\ns_oct2016\Final_Report\report.aux
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ucs\ucsencs.def"
+LaTeX Warning: Label `adhoc' multiply defined.
+
+)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ucs\ucsencs.def"
 File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count126
-\scratchdimen=\dimen163
-\scratchbox=\box39
-\nofMPsegments=\count127
-\nofMParguments=\count128
-\everyMPshowfont=\toks39
-\MPscratchCnt=\count129
-\MPscratchDim=\dimen164
-\MPnumerator=\count130
-\makeMPintoPDFobject=\count131
-\everyMPtoPDFconversion=\toks40
+\scratchcounter=\count132
+\scratchdimen=\dimen166
+\scratchbox=\box43
+\nofMPsegments=\count133
+\nofMParguments=\count134
+\everyMPshowfont=\toks41
+\MPscratchCnt=\count135
+\MPscratchDim=\dimen167
+\MPnumerator=\count136
+\makeMPintoPDFobject=\count137
+\everyMPtoPDFconversion=\toks42
 ) ABD: EveryShipout initializing macros
 <logo.png, id=4, 126.4725pt x 126.4725pt>
 File: logo.png Graphic file (type png)
  <use logo.png>
-Package pdftex.def Info: logo.png used on input line 50.
+Package pdftex.def Info: logo.png used on input line 25.
 (pdftex.def)             Requested size: 126.47218pt x 126.47218pt.
 
-Overfull \hbox (29.11157pt too wide) in paragraph at lines 56--56
+Overfull \hbox (29.11157pt too wide) in paragraph at lines 31--31
  [][] 
  []
 
@@ -536,26 +569,69 @@ Overfull \hbox (29.11157pt too wide) in paragraph at lines 56--56
 al_Report/logo.png>] (F:\Masters\ns_oct2016\Final_Report\report.toc)
 \tf@toc=\write4
  [1]
-[2] [3] (F:\Masters\ns_oct2016\Final_Report\report.aux) ) 
+[2]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 125.
+
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 125.
+
+<smart_card.jpg, id=23, 803.0pt x 506.89375pt>
+File: smart_card.jpg Graphic file (type jpg)
+ <use smart_card.jpg>
+Package pdftex.def Info: smart_card.jpg used on input line 136.
+(pdftex.def)             Requested size: 240.90186pt x 152.06929pt.
+ [3 <F:/Masters/ns_oct2016/Final_Report/smart_card.jpg>]
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ucs\uni-32.def"
+File: uni-32.def 2013/05/13 UCS: Unicode data U+2000..U+20FF
+) [4] [5] [6]
+[7] [8] [9] <tre.png, id=49, 402.00188pt x 282.30469pt>
+File: tre.png Graphic file (type png)
+ <use tre.png>
+Package pdftex.def Info: tre.png used on input line 235.
+(pdftex.def)             Requested size: 321.60193pt x 225.84404pt.
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 245.
+
+
+Overfull \hbox (1.43301pt too wide) in paragraph at lines 248--264
+ [][] 
+ []
+
+
+LaTeX Warning: Float too large for page by 15.06647pt on input line 267.
+
+[10 <F:/Masters/ns_oct2016/Final_Report/tre.png>] [11] [12]
+(F:\Masters\ns_oct2016\Final_Report\report.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 12720 strings out of 493921
- 252432 string characters out of 3144879
- 291687 words of memory out of 3000000
- 15773 multiletter control sequences out of 15000+200000
- 10416 words of font info for 37 fonts, out of 3000000 for 9000
+ 13340 strings out of 493921
+ 259766 string characters out of 3144879
+ 403056 words of memory out of 3000000
+ 16375 multiletter control sequences out of 15000+200000
+ 11177 words of font info for 40 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 62i,5n,56p,486b,264s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files (x86
-)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files (x86)/
-MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files (x86)/Mi
-KTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program Files (x86)/MiK
-TeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files (x86)/MiKTeX
- 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files (x86)/MiKTeX 2.
-9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files (x86)/MiKTeX 2.9/f
-onts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on report.pdf (4 pages, 97674 bytes).
+ 62i,11n,56p,1725b,283s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C
+:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:
+/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Pr
+ogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Progr
+am Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program 
+Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program File
+s (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x
+86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86
+)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on report.pdf (13 pages, 274760 bytes).
 PDF statistics:
- 48 PDF objects out of 1000 (max. 8388607)
+ 94 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 18 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 28 words of extra memory for PDF output out of 10000 (max. 10000000)
 

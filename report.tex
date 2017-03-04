@@ -1,42 +1,17 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% University Assignment Title Page 
-% LaTeX Template
-% Version 1.0 (27/12/12)
-%
-% This template has been downloaded from:
-% http://www.LaTeXTemplates.com
-%
-% Original author:
-% WikiBooks (http://en.wikibooks.org/wiki/LaTeX/Title_Creation)
-%
-% License:
-% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
-% 
-% Instructions for using this template:
-% This title page is capable of being compiled as is. This is not useful for 
-% including it in another document. To do this, you have two options: 
-%
-% 1) Copy/paste everything between \begin{document} and \end{document} 
-% starting at \begin{titlepage} and paste this into another LaTeX file where you 
-% want your title page.
-% OR
-% 2) Remove everything outside the \begin{titlepage} and \end{titlepage} and 
-% move this file to the same directory as the LaTeX file you wish to add it to. 
-% Then add \input{./title_page_1.tex} to your LaTeX file where you want your
-% title page.
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\title{Title page with logo}
-%----------------------------------------------------------------------------------------
-%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
-%----------------------------------------------------------------------------------------
-
 \documentclass[12pt]{article}
 \usepackage[english]{babel}
 \usepackage[utf8x]{inputenc}
 \usepackage{amsmath}
 \usepackage{graphicx}
 \usepackage[colorinlistoftodos]{todonotes}
+\usepackage{longtable}
+\usepackage{lipsum} % just for dummy text- not needed for a longtable
+
+
+\usepackage{array}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
 
 \begin{document}
 
@@ -119,9 +94,191 @@ health sector, transport industry etc have long been realized. With great potent
 \end{abstract}
 
 \section{Introduction}
+\paragraph{}
+Among the main driving factors towards the success
+of smart card technology are the capabilities of
+performing security sensitive operations along with
+maintaining the integrity of the internally stored
+information in machine to machine communication. These characteristics enable the wide
+deployment of smart card based services in a variety of
+applications and sectors. Smart cards are increasingly
+used as authentication and encryption vehicles in
+mobile phones, as bankcards, and as the carrying
+medium for various payment and access control
+applications.
+\paragraph{}
+Due to the sensitive and important role of the smart
+card device within the overall smart card based system
+it is evident that the card as well as the infrastructure
+components be designed to withstand various attacks
+and attempts of fraud during their lifecycle. This has
+implications on both physical and logical security
+levels, which are of vital importance and at the same
+time act as the driving factor for the adoption of the
+technology. In mobile networks where the terminals are exposed to vulnerabilities security is a major concern. Without proper security features the whole system will face difficulties in running operations.
+
+
+\section{Common Terminologies}
+\subsection{Smart Card}
+Smart card is  small embedded computer. More specifically, its a built-in microprocessor, used typically for electronic processes such as financial transactions , personal identification etc. Some of the applications of smart card are:
+\begin{itemize}
+\item Computer Security
+\item Credit Cards
+\item Financial transaction
+\item Health Care(medical)
+\item Identification
+
+\end{itemize}
+
+\begin{figure}[!t]
+
+\centering
+    \includegraphics[scale=0.3]{smart_card}
+    \caption{Carte Vitale : Smart card used for health insurance in France}
+    \label{smart_card}
+\label{adhoc}
+
+\end{figure}
+
+Figure \ref{smart_card} is the smart card that was used for health insurance in France in early 90s. 
+
+
+\subsection{Machine to Machine(M2M) Communication}
+Machine to machine refers to direct communication between devices using any communications channel, including wired and wireless. Machine to machine communication can include industrial instrumentation, enabling a sensor or meter to communicate the data it records (such as temperature, inventory level, etc.) to application software that can use it (for example, adjusting an industrial process based on temperature or placing orders to replenish inventory). Such communication was originally accomplished by having a remote network of machines relay information back to a central hub for analysis, which would then be rerouted into a system like a personal computer. 
+
+\subsection{Security of Smart Cards}
+With great advantages smart cards are forced to face some inevitable security issues. Smart card security is associated with both the physical and logical design of the cards. 
+
+\section{Challenges of M2M}
+M2M communication system has some major challenges to deal with. Some of the critical challenges are:
+
+\begin{itemize}
+\item Terminals may be in hard-to-reach locations (e.g. traffic cameras)
+\item Terminals may become geographically dispersed over time (e.g. cargo containers)
+\item Owners of large populations of terminals may want to change the network
+operator without visiting the terminals (e.g. to change the UICC \footnote{Universal integrated circuit card. For example SIM card})).
+\item Terminals need to be protected against unauthorised removal of UICC
+\item Terminals may require over-network provisioning after sale or installation.
+\end{itemize}
+
+M2M requirements may make the conventional UICC a less advantageous solution for secure authentication. It is necessary to look at the options for a non-personalised security module to which a network operator’s Network Access Application (NAA) can be downloaded. This may be accomplished using an embedded Trusted Environment (TRE) in a terminal. The TRE acts as a hardware root of trust for the storage and execution of secure applications and may also have protected software functions. The TRE may host downloaded software NAAs that emulate the behavior of the USIM  or ISIM  applications.
+
+\section{Challenges of Mobile Networks}
+The challenges of M2M intensifies when considered in mobile networks. Mobile networks changes over time and places. The topology changes are too frequent. Data delivery,throughput, bandwidth etc are major concerns in this type of networks. 
+
+
+\section{Smart Card Security in Mobile Networks}
+Current implementation of smart card manufacture has some positive security aspects that plays a great role in using smart card in M2M mobile networks.
+\subsection{Physical Tamper-Resistance}
+An ISO-7816  smart card has, in practice, a single-chip architecture with little possibility of monitoring communications between different chips on the card. Smart card ICs are designed and implemented to prevent probing and reverse-engineering. They are fabricated on a dedicated production line in a secure facility. Measures include scrambling of busses and of memory addresses, bonded passivation layers, permanently disabled test points, self-generated programming voltage.
+
+\subsection{Proprietary, Secure O/S}
+The Smart card’s standardised API, e.g. [4], consists of a restricted command set that has no hidden commands or access methods. It is trusted because of its own built-in security mechanisms and because of those of the underlying hardware platform. It is non-updateable. \newline For applications such as USIM, the Ki and OTA keys are stored and accessed by the O/S in proprietary ways. The O/S cannot be made to reveal the values or memory locations of those data. Conventional GSM SIM cards did not allow adding applications to a live card. The advent of the Javacard now allows applications on a multi-application UICC platform to be updated, deleted or added to an issued card, either remotely or locally. The potential of Javacard for Network Operators is currently restricted by:
+\begin{itemize}
+\item Implementation by Network Operators of only SMS as the bearer (for OTA messages to the UICC), which has a very limited bandwidth 
+\item OTA security standards [11] are not profiled for IP bearers 
+\item Lack of a sufficiently rich terminal/UICC interface on nearly all MEs \footnote{A few terminals have implemented the JSR177  terminal/UICC interface, but it’s usually only the SIM toolkit part and not the general APDU API. A few Windows Mobile MEs have allowed an open APDU API to the UICC, using the terminal’s RIL (Radio Interface Layer) but it is not clear if those are still in production}
+\item General concerns about the security of multi-application Javacards.
+\end{itemize}
+In the world of telecoms, it is generally up to the buyer to perform a due diligence test on the smart card vendor to ensure that the O/S has been properly developed and evaluated.
+
+\subsection{Other Measures}
+Smart cards include proprietary measures to prevent attacks such as slowing down the external clock and measures against power analysis attacks by the use of noise-free computational algorithms and/or injection of artificial noise and/or damping of noise on the power rail. There are also said to be a large number of detailed precautionary measures taken, some of which are described in the public domain.
+\subsubsection{Design and Development Process}
+Security is designed into a smart card IC in the secure facilities of a semiconductor manufacturer. The computers that are used for this are isolated from the rest of the world. Undocumented counter-measures in the IC are supported by corresponding design criteria. Once the O/S development is finished, the entire source code may be checked by an independent evaluation.
+\subsubsection{Supply Chain}
+There are only a handful of world-class vendors of smart cards, so it is feasible for Network Operators to perform the necessary security audits. There will be an agreed arrangement for transferring the Ki objects between network operators and UICC vendors. Ki values cannot be retained in the vendors’ personalisation systems or be discovered by system operatives.
+
+\subsubsection{Security Evaluations}
+Card vendors have their O/S independently evaluated and MNOs perform security evaluations of their card vendors’ products and facilities. GSMA [15] provides non-public guidance to its members on how to do that. Common Criteria Protection Profiles have been published for smart cards. One of these [16] is aimed at the underlying IC platform but some are aimed at payment cards issued by financial institutions such as Visa and Mastercard. Cost can be an issue for wider adoption of these evaluation regimes. There are no standard specifications or protection profiles for the security evaluation of telecoms smart cards such as UICCs.
+
+\subsubsection{Terminal Interface Security}
+The UICC employs some security measures in the interface with the terminal:
+\begin{itemize}
+\item User Authentication: PINs (called CHV1 and CHV2 in a SIM card), provide some level of protection with user authorisation on the interface. CHV1 can be disabled by the user, in which case there is no PIN-protection for making calls. The use of CHV1 and CHV2 poses a security vulnerability since the passwords get transported across the UICC-ME interface in clear. The UICC does not authenticate itself to the user, although 3G authentication  provides mutual authentication of the card and the network. In M2M, a remote user could rely on two possible methods of assuring himself of the authenticity of a UICC, i.e. (a) using a remote access protocol that exploits a pre-shared or private key on the UICC and/or (b) using e.g. Liberty Alliance  protocols to trigger the UICC issuer to perform an authentication of the UICC and possibly binding that to the remote access session.
+
+\item  Commands to the UICC are not secured unless they are inside a 3GPP OTA envelope . That is why ETSI and 3GPP have recently specified secure channels and their key establishment methods across the terminal-UICC interface. ISO 7816 and EN726  define secure messaging between a terminal and a smart card but key distribution was not defined (it being assumed that it would be based on pre-installed keys). ISO7816 also defines a set of security-related commands. Neither the ISO nor CEN techniques are included in UICC specifications such as ETSI and 3GPP secure channel specs and compliment the ISO and CEN standards by defining methods for key distribution between the terminal and UICC. There does not seem to be any reason to believe that normal terminals can be trusted to store the distributed key. Protocols such as Global Platform, ETSI RAM/RFM and 3GPP OTA provide end-to-end security from server to card for the purpose of loading and managing files and applications on the UICC. They do not require a secure ME/UICC interface\footnote{Remote Application Management can theoretically be used to download any Javacard application to a UICC and to store it in a security domain. It does not currently apply to the U(I)SIM applications, as there is no standardised mechanism for the UICC to extract and store the Ki and algorithm customisation parameters. For the case of updating existing files either locally or remotely, this is possible only where the access conditions in the File Control Parameters can be satisfied. Remote (OTA) file update is possible on files in any application on the UICC, but only if the files were OTA-enabled at the time the file was created on the UICC}.
+
+\item Protection of data across the interface: All standardised command-sets of a UICC are designed to be sent in the clear across the terminal/UICC interface. Protocols that may be subject to replay attacks must have counter-measures built in, e.g. the sequence numbers used in 3G authentication. In future, the Smart Card Web Server (SCWS), could use HTTPS/TLS to establish a secure tunnel from card to server (or to terminal) via which usernames and passwords could be sent.
+
+\item Access control: In general, access control lists (ACLs) are not used in today’s UICC O/Ss. Access to file operations relies on the principle that if the entity accessing the file can satisfy the access policy (embodied in the File Control Parameters), then it must be an authorised entity.
+\end{itemize}
 
 
 
+\section{Meeting M2M Requirements with Smart Cards}
+Followings are the features of smart card that make it a suitable candidate to use in M2M mobile networks.
+\subsection{Advent of the "Big SIM" UICC}
+Recent innovations in smart card technology could go a long way to enabling the UICC to fulfill the M2M requirements. The new features described below, plus the ability to store downloaded applications and multimedia files, would need the large memory of "Big SIM". 
+
+\subsection{Large Memory}
+Recently, Smart cards with flash memory of up to 2Gbytes have become available.
+
+\subsection{High-Speed I/O}
+The conventional I/O speed of the UICC or terminal interface is only a half-duplex 9.6Kbit. In order to be able to move data on and off the Big SIM in a meaningful timeframe is required. Modern smart cards can be equipped with this speed.
+
+
+\subsection{Smart Card Web Server (SCWS)}
+The advent of Mega SIM with USB I/O enables the UICC to support an IP stack and web server. There are a number of advantages to this, e.g. use of (X)HTML to communicate with the UICC. UICCs could even have their own IP addresses, which could introduce a whole set of security issues. ETSI SCP has standardised SCWS and IP on a UICC. Use of SMS for application download is limited in practice to about a 1kByte payload, i.e. 7 concatenated SMSs. Even then, this requires a dedicated SMS-C to achieve an effective success-rate. With ordinary SMS-Cs whose resources are shared with mainstream SMS, the practical limit may be as little as 2 concatenated SMSs, i.e. about 300 bytes. The size of a download using an IP bearer does not suffer from such limitations.
+
+\subsection{Internal Security Domains}
+Global Platform has specifications [10] that define security domains on a Javacard smart card. ETSI SCP are now expanding upon these in their specifications for "Confidential Applications." This allows the card issuer to set up domains for the use of third parties to load applets onto the card. The issuer cannot examine those applets. The UICC provides a sandbox environment in which the domains are isolated from each other – a feature that has been somewhat limited in Javacard implementations up to now.
+
+
+
+
+
+ 
+\section{Options for Secure Downloadable Identity} 
+Option for client-side authentication technologies for M2M could include:
+\begin{itemize}
+\item UICC with download capability
+\item An embedded TRE in the terminal, to provide a secure execution and storage
+environment. Authentication applications (Managed Identities or "MIDs")
+would be downloaded to the TRE over public IP networks.
+\item Smart token such as the new multimedia card with on-card UICC (or SMC)
+
+\end{itemize}
+
+A framework of standardised specifications is needed for the above solutions. The discussion within standardization about the (dis-)advantages of the various candidate solutions is lively and far from concluded.
+
+\begin{figure}[!t]
+\centering
+    \includegraphics[scale=0.8]{tre}
+    \caption{Options for Secure Environments for Downloaded Identity Credentials}
+    \label{tre}
+\label{adhoc}
+
+\end{figure}
+
+
+% Please add the following required packages to your document preamble:
+% \usepackage{graphicx}
+\begin{table}[]
+\centering
+
+\begin{tabular}{|L{4cm}|L{4cm}|L{2cm}|L{2cm}|}
+\hline
+\textbf{Required Feature} & \textbf{UICC} & \textbf{TRE} & \textbf{SMC} \\ \hline
+Currently standardised & good & medium (it could be based partly on TCG specs) & medium \\ \hline
+Currently available & good & medium (some limited versions available) & poor \\ \hline
+Protection against unauthorised removal & poor (good, if M2M form factor UICC is soldered in) & good & poor \\ \hline
+Provides secure API & good & good & not known \\ \hline
+Does not require connector and interface chips & poor & good & poor \\ \hline
+MIDs can be downloaded & poor. Can’t download NAAs & good & poor. Can’t download NAAs \\ \hline
+Key management suits M2M model & poor (pre-shared keys for authentication and download) & good (can use PKI) & poor \\ \hline
+Predictable costs & poor (for full-function, big memory, downloadable UICC) & Good (part of chipset) & poor \\ \hline
+Secure channel to terminal & poor (standardised but usually not implemented) & good & not known \\ \hline
+Remote change of operator & poor & good & poor \\ \hline
+Open API for download & poor & good & poor \\ \hline
+
+\end{tabular}%
+
+\caption{Comparison of Solutions for Secure Downloadable Identity}
+\label{comparison}
+\end{table}
+Table ~\ref{comparison} shows the comparison between different options.
+No solution comes out as perfect, but the TRE shows promise if it can be standardised. The UICC shows promise if its current limitations (including that of lack of implementation of already-standardised features in cards and terminals) can be overcome
 
 \newpage
 \begin{thebibliography}{9}

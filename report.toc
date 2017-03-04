@@ -1,2 +1,23 @@
 \select@language {english}
 \contentsline {section}{\numberline {1}Introduction}{2}
+\contentsline {paragraph}{}{2}
+\contentsline {paragraph}{}{2}
+\contentsline {section}{\numberline {2}Common Terminologies}{3}
+\contentsline {subsection}{\numberline {2.1}Smart Card}{3}
+\contentsline {subsection}{\numberline {2.2}Machine to Machine(M2M) Communication}{3}
+\contentsline {subsection}{\numberline {2.3}Security of Smart Cards}{4}
+\contentsline {section}{\numberline {3}Challenges of M2M}{4}
+\contentsline {section}{\numberline {4}Challenges of Mobile Networks}{5}
+\contentsline {section}{\numberline {5}Smart Card Security in Mobile Networks}{5}
+\contentsline {subsection}{\numberline {5.1}Physical Tamper-Resistance}{5}
+\contentsline {subsection}{\numberline {5.2}Proprietary, Secure O/S}{5}
+\contentsline {subsection}{\numberline {5.3}Other Measures}{6}
+\contentsline {subsubsection}{\numberline {5.3.1}Design and Development Process}{6}
+\contentsline {subsubsection}{\numberline {5.3.2}Supply Chain}{7}
+\contentsline {subsubsection}{\numberline {5.3.3}Security Evaluations}{7}
+\contentsline {subsubsection}{\numberline {5.3.4}Terminal Interface Security}{7}
+\contentsline {section}{\numberline {6}Meeting M2M Requirements with Smart Cards}{9}
+\contentsline {subsection}{\numberline {6.1}Advent of the "Big SIM" UICC}{9}
+\contentsline {subsection}{\numberline {6.2}Large Memory}{9}
+\contentsline {subsection}{\numberline {6.3}High-Speed I/O}{9}
+\contentsline {section}{\numberline {7}Options for Secure Downloadable Identity}{9}
