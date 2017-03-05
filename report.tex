@@ -133,8 +133,8 @@ Smart card is  small embedded computer. More specifically, its a built-in microp
 \begin{figure}[!t]
 
 \centering
-    \includegraphics[scale=0.3]{smart_card}
-    \caption{Carte Vitale : Smart card used for health insurance in France}
+    \includegraphics[scale=0.8]{smart_card_internal}
+    \caption{Basic internal structure of smart card}
     \label{smart_card}
 \label{adhoc}
 
@@ -222,14 +222,31 @@ The conventional I/O speed of the UICC or terminal interface is only a half-dupl
 The advent of Mega SIM with USB I/O enables the UICC to support an IP stack and web server. There are a number of advantages to this, e.g. use of (X)HTML to communicate with the UICC. UICCs could even have their own IP addresses, which could introduce a whole set of security issues. ETSI SCP has standardised SCWS and IP on a UICC. Use of SMS for application download is limited in practice to about a 1kByte payload, i.e. 7 concatenated SMSs. Even then, this requires a dedicated SMS-C to achieve an effective success-rate. With ordinary SMS-Cs whose resources are shared with mainstream SMS, the practical limit may be as little as 2 concatenated SMSs, i.e. about 300 bytes. The size of a download using an IP bearer does not suffer from such limitations.
 
 \subsection{Internal Security Domains}
-Global Platform has specifications [10] that define security domains on a Javacard smart card. ETSI SCP are now expanding upon these in their specifications for "Confidential Applications." This allows the card issuer to set up domains for the use of third parties to load applets onto the card. The issuer cannot examine those applets. The UICC provides a sandbox environment in which the domains are isolated from each other – a feature that has been somewhat limited in Javacard implementations up to now.
+Global Platform has specifications that define security domains on a Javacard smart card. ETSI SCP are now expanding upon these in their specifications for "Confidential Applications." This allows the card issuer to set up domains for the use of third parties to load applets onto the card. The issuer cannot examine those applets. The UICC provides a sandbox environment in which the domains are isolated from each other – a feature that has been somewhat limited in Javacard implementations up to now.
+
+
+
+\section{Some Example of usages of Smart card in M2M mobile networks}
 
 
 
 
 
- 
-\section{Options for Secure Downloadable Identity} 
+
+\section{Enhancements Required for M2M Mass Market}
+A Smart card to be used in mass-market M2M applications would have to support the requirements of long life-time with long maintenance intervals, non-removability, remote download of operator’s authentication application and remote change of operator. Some very significant enhancements need to be considered as follows:
+
+\subsection{Security Domains}
+Support is required for security domains for the card issuer and for third parties, e.g. as per the SCP specifications "Confidential Applications" concept. But in the M2M scenario, network operators would be classed as third parties. In order for the card issuer to allow the M2M equipment owner to change to a new network operator, the card issuer (who is therefore not a network operator) assigns a domain to a new network operator and closes the domain of the old network operator.
+
+\subsection{Removable UICC vs. Downloadable UICC}
+Unauthorised removal of a traditional "removable" UICC must be made very difficult, while its replacement must be easy. A better alternative to this is to fix the UICC in the terminal and for it to support the ability to download MIDs. Such a UICC must be able to extract Ki objects and similarly sensitive data from messages from a remote server and lock them away in secure memory so that they cannot be revealed to entities outside the UICC. Network operators will demand that there be no reduction of security in UICCs that support these features.
+
+\subsection{Secure Download Protocols}
+Support is required for secure download protocols other than standardised OTA, i.e. M2M requires protocols which do not require pre-shared keys and which can be used over IP bearers. (In this respect, support for SCWS and IP stack could be an advantage).
+
+
+\subsubsection{Options for Secure Downloadable Identity} 
 Option for client-side authentication technologies for M2M could include:
 \begin{itemize}
 \item UICC with download capability
@@ -279,6 +296,9 @@ Open API for download & poor & good & poor \\ \hline
 \end{table}
 Table ~\ref{comparison} shows the comparison between different options.
 No solution comes out as perfect, but the TRE shows promise if it can be standardised. The UICC shows promise if its current limitations (including that of lack of implementation of already-standardised features in cards and terminals) can be overcome
+
+\subsection{Secure Interface to Terminal}
+Support for a secure terminal-UICC interface may be a requirement, as discussed above.
 
 \newpage
 \begin{thebibliography}{9}
