@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2017.2.24)  5 MAR 2017 07:54
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2017.2.24)  6 MAR 2017 08:07
 entering extended mode
 **report.tex
 (F:\Masters\ns_oct2016\Final_Report\report.tex
@@ -523,6 +523,9 @@ Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
 
 LaTeX Warning: Label `adhoc' multiply defined.
 
+
+LaTeX Warning: Label `adhoc' multiply defined.
+
 )
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
 LaTeX Font Info:    ... okay on input line 16.
@@ -569,7 +572,7 @@ Overfull \hbox (29.11157pt too wide) in paragraph at lines 31--31
 al_Report/logo.png>] (F:\Masters\ns_oct2016\Final_Report\report.toc)
 \tf@toc=\write4
  [1]
-[2]
+[2] [3]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 125.
 
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
@@ -578,50 +581,62 @@ File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 125.
 
-<smart_card_internal.png, id=23, 411.03563pt x 133.24782pt>
+<smart_card_internal.png, id=26, 411.03563pt x 133.24782pt>
 File: smart_card_internal.png Graphic file (type png)
 
 <use smart_card_internal.png>
 Package pdftex.def Info: smart_card_internal.png used on input line 136.
 (pdftex.def)             Requested size: 328.82895pt x 106.59839pt.
- [3 <F:/Masters/ns_oct2016/Final_Report/smart_card_internal.png>] ("C:\Program 
+ [4 <F:/Masters/ns_oct2016/Final_Report/smart_card_internal.png>] ("C:\Program 
 Files (x86)\MiKTeX 2.9\tex\latex\ucs\uni-32.def"
 File: uni-32.def 2013/05/13 UCS: Unicode data U+2000..U+20FF
 )
-[4] [5] [6] [7] [8] [9]
-Overfull \hbox (16.61182pt too wide) in paragraph at lines 236--236
+[5] [6] [7] [8] [9] [10]
+Overfull \hbox (1.75427pt too wide) in paragraph at lines 241--242
+[]\OT1/cmr/m/n/12 Oyster Smart-cards in the Lon-don Un-der-ground Sub-way Sys-t
+em (started
+ []
+
+[11] <smart_card.jpg, id=57, 803.0pt x 506.89375pt>
+File: smart_card.jpg Graphic file (type jpg)
+ <use smart_card.jpg>
+Package pdftex.def Info: smart_card.jpg used on input line 282.
+(pdftex.def)             Requested size: 240.90186pt x 152.06929pt.
+
+Overfull \hbox (16.61182pt too wide) in paragraph at lines 291--291
 []\OT1/cmr/bx/n/17.28 Enhancements Re-quired for M2M Mass Mar-
  []
 
-[10] <tre.png, id=54, 402.00188pt x 282.30469pt>
+[12 <F:/Masters/ns_oct2016/Final_Report/smart_card.jpg>] [13]
+<tre.png, id=65, 402.00188pt x 282.30469pt>
 File: tre.png Graphic file (type png)
  <use tre.png>
-Package pdftex.def Info: tre.png used on input line 264.
+Package pdftex.def Info: tre.png used on input line 319.
 (pdftex.def)             Requested size: 321.60193pt x 225.84404pt.
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 274.
+               Default added (so using `tbp') on input line 329.
 
 
-Overfull \hbox (1.43301pt too wide) in paragraph at lines 277--293
+Overfull \hbox (1.43301pt too wide) in paragraph at lines 332--348
  [][] 
  []
 
 
-LaTeX Warning: Float too large for page by 15.06647pt on input line 296.
+LaTeX Warning: Float too large for page by 15.06647pt on input line 351.
 
-[11] [12] [13 <F:/Masters/ns_oct2016/Final_Report/tre.png>]
+[14 <F:/Masters/ns_oct2016/Final_Report/tre.png>] [15] [16]
 (F:\Masters\ns_oct2016\Final_Report\report.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 13338 strings out of 493921
- 259805 string characters out of 3144879
- 405055 words of memory out of 3000000
- 16374 multiletter control sequences out of 15000+200000
+ 13345 strings out of 493921
+ 259917 string characters out of 3144879
+ 403064 words of memory out of 3000000
+ 16379 multiletter control sequences out of 15000+200000
  11177 words of font info for 40 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  62i,11n,56p,1725b,283s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -635,9 +650,9 @@ Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program File
 s (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x
 86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86
 )/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on report.pdf (14 pages, 211186 bytes).
+Output written on report.pdf (17 pages, 294289 bytes).
 PDF statistics:
- 98 PDF objects out of 1000 (max. 8388607)
+ 108 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 28 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 33 words of extra memory for PDF output out of 10000 (max. 10000000)
 
