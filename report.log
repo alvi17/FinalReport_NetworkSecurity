@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2017.2.24)  6 MAR 2017 08:07
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2017.2.24)  7 MAR 2017 00:28
 entering extended mode
 **report.tex
 (F:\Masters\ns_oct2016\Final_Report\report.tex
@@ -569,9 +569,9 @@ Overfull \hbox (29.11157pt too wide) in paragraph at lines 31--31
 [1
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <F:/Masters/ns_oct2016/Fin
-al_Report/logo.png>] (F:\Masters\ns_oct2016\Final_Report\report.toc)
+al_Report/logo.png>] (F:\Masters\ns_oct2016\Final_Report\report.toc [1])
 \tf@toc=\write4
- [1]
+
 [2] [3]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 125.
 
@@ -603,43 +603,46 @@ File: smart_card.jpg Graphic file (type jpg)
 Package pdftex.def Info: smart_card.jpg used on input line 282.
 (pdftex.def)             Requested size: 240.90186pt x 152.06929pt.
 
-Overfull \hbox (16.61182pt too wide) in paragraph at lines 291--291
+[12 <F:/Masters/ns_oct2016/Final_Report/smart_card.jpg>] [13] [14]
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ucs\uni-0.def"
+File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
+) [15] [16]
+Overfull \hbox (16.61182pt too wide) in paragraph at lines 504--504
 []\OT1/cmr/bx/n/17.28 Enhancements Re-quired for M2M Mass Mar-
  []
 
-[12 <F:/Masters/ns_oct2016/Final_Report/smart_card.jpg>] [13]
-<tre.png, id=65, 402.00188pt x 282.30469pt>
+[17] <tre.png, id=78, 402.00188pt x 282.30469pt>
 File: tre.png Graphic file (type png)
  <use tre.png>
-Package pdftex.def Info: tre.png used on input line 319.
+Package pdftex.def Info: tre.png used on input line 532.
 (pdftex.def)             Requested size: 321.60193pt x 225.84404pt.
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 329.
+               Default added (so using `tbp') on input line 542.
 
 
-Overfull \hbox (1.43301pt too wide) in paragraph at lines 332--348
+Overfull \hbox (1.43301pt too wide) in paragraph at lines 545--561
  [][] 
  []
 
 
-LaTeX Warning: Float too large for page by 15.06647pt on input line 351.
+LaTeX Warning: Float too large for page by 15.06647pt on input line 564.
 
-[14 <F:/Masters/ns_oct2016/Final_Report/tre.png>] [15] [16]
+[18] [19] [20 <F:/Masters/ns_oct2016/Final_Report/tre.png>] [21]
 (F:\Masters\ns_oct2016\Final_Report\report.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 13345 strings out of 493921
- 259917 string characters out of 3144879
- 403064 words of memory out of 3000000
- 16379 multiletter control sequences out of 15000+200000
- 11177 words of font info for 40 fonts, out of 3000000 for 9000
+ 13836 strings out of 493921
+ 264972 string characters out of 3144879
+ 405063 words of memory out of 3000000
+ 16866 multiletter control sequences out of 15000+200000
+ 11472 words of font info for 41 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 62i,11n,56p,1725b,283s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 62i,11n,56p,1725b,479s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C
 :/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:
@@ -649,10 +652,11 @@ am Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program
 Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program File
 s (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x
 86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86
-)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on report.pdf (17 pages, 294289 bytes).
+)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files (x86)/
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmu10.pfb>
+Output written on report.pdf (22 pages, 313658 bytes).
 PDF statistics:
- 108 PDF objects out of 1000 (max. 8388607)
+ 128 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  33 words of extra memory for PDF output out of 10000 (max. 10000000)
 

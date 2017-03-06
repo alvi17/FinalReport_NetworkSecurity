@@ -288,6 +288,219 @@ insurance purposes in France}
 \end{figure}
 
 
+\section{Limitations and Challenges of Smart card in M2M Mass Communication Market}
+Despite the many benefits and opportunities that result
+from the use of smart cards in M2M mobile networks, smart
+cards haven’t taken over as the default technology in
+healthcare data management due to several limitations
+related with their use.
+
+
+\subsection{Attacks Against Smart Card Component}
+There are two types of non volatile memory in a
+smart card. The Read Only Memory (ROM) hold’s
+persistent information (e.g. the smart card operating
+system, applications), which is written (masked) during
+the manufacturing phase. The most common type of
+memory that allows information to be written or
+deleted at any point in the cards lifecycle is the
+Electrically Erasable Programmable Read Only
+Memory (EEPROM). Therefore, the target of an
+attack can be the security sensitive information stored
+internally within the card. The aim of the attack will
+be to obtain access to such information and use it to
+compromise the security of the card or some other
+principal entity in the smart card scheme. \newline
+There are two types of non volatile memory in a
+smart card. The Read Only Memory (ROM) hold’s
+persistent information (e.g. the smart card operating
+system, applications), which is written (masked) during
+the manufacturing phase. The most common type of
+memory that allows information to be written or
+deleted at any point in the cards lifecycle is the
+Electrically Erasable Programmable Read Only
+Memory (EEPROM). Therefore, the target of an
+attack can be the security sensitive information stored
+internally within the card. The aim of the attack will
+be to obtain access to such information and use it to
+compromise the security of the card or some other
+principal entity in the smart card scheme.
+A smart card attack can also target the operation of
+cryptographic primitives (e.g. the generation of
+cryptographic keys or execution of an application) of
+the actual smart card microprocessor. The aim of this
+attack will be to force the smart card microprocessor to
+perform certain operations that will compromise its
+security. For example, to allow the microprocessor to
+update the ticket entitlement in the card and at the
+same time avoid deducting the payable amount from
+the purse. The range of attacks on smart cards can be
+classified into three basic categories i.e. logical,
+physical and side-channel.
+
+\subsubsection{Logical attacks}
+The logical types of attacks attempt to identify and
+exploit any vulnerabilities or weaknesses in the design
+of the smart card operating system (SCOS) or
+the smart card application. This may take the form of
+presenting the card with invalid commands, formats,
+field lengths or attempts to overflow buffers. The
+advantage of these attacks is that they are cheap,
+relatively simple to perform and do not necessarily
+damage the card. However, provided that reputable
+application developers and smart card suppliers are
+used then rigorous design (and sometime peer reviews)
+and development processes should have eliminated the
+logical vulnerabilities.
+
+\subsubsection{Physical attacks}
+These types of attacks can be mounted by an entity
+obtaining physical access to the smart card. Therefore
+the attacker can be either the cardholder, a member of
+staff, or even a third party that somehow manages to
+get hold of some legitimate cards. \newline
+There are many different ways to perform physical
+attacks on smart card microprocessors, some require
+loaw cost equipment [13] and other require
+sophisticated and expensive equipment. Typical
+attacks, in the latter category, include attempts to read
+the contents of the EEPROM memory of the card (by
+using powerful electron microscopes) [7], to re-activate
+burned fuses by focusing ion beams or even using laser
+cutter microscopes to modify the architecture of the
+chip. In most cases a number of chips may have to be
+destroyed before an attack is considered successful. In
+order to provide adequate countermeasures the smart
+card manufacturers provide constant improvements
+(Dielectric "passivation layers", wire mesh layers and
+non standard bus systems) on their chip designs, in
+order to make it more difficult for these attacks to take
+place. \newline
+Whilst physical attacks have focused on smart cards
+used in other industries there is no reason why they
+cannot be applied to transport [4]. The main question is
+whether a criminal group can find a business case to
+justify the cost and effort required for such an attack.
+
+
+\subsubsection{Side-Channel Attacks}
+Side channel attacks have been off concern to the
+smart card industry because they require modest levels
+of equipment and do not necessarily damage the card.
+The majority of attacks have monitored the supply
+current of the working smart card in order to infer how
+particular processes run and to extract secret
+information such as keys stored on the card [9]. Similar
+results have been obtained in laboratory conditions by
+carefully positioning a tiny antenna over certain areas
+of a smart card chip. Attacks can be applied to
+normally operating processes or by applying external
+input to introduce faults. \newline
+There are some industry review of contactless card
+security  but up to recently there was relatively
+little is said about side-channel attacks on contactless
+cards (compared to cards with contacts), primarily
+because there was no direct and convenient
+measurement of current consumption. However,
+current variations may result in detectable RF field
+fluctuations which may then be processed. The radio
+communication link may also assist the attacker if it
+proves possible to locally eavesdrop on normal card
+usage.
+
+\subsubsection{Publicity Attacks}
+The "publicity" attacks usually come from
+researchers and individuals seeking fame and
+recognition. Although initially these types of attacks
+might not be considered extremely damaging, they
+actually are, as they eventually attack the brand image.
+In case a smart card application (residing in a multiapplication
+smart card) is compromised, it is often the
+case that all the accompanying applications receive the
+bad publicity. In that case restoring the brand image
+can be extremely daunting. For example, suppose a
+loyalty point application, an electronic purse
+application and a ticketing application are all residing
+in the same card. Let us suppose that the loyalty
+application is compromised and due to the fact that it is
+used alongside the transport application the latter also
+receives negative publicity. \newline
+The "publicity" attacks can have a devastating
+effect both on the actual project and the organisations
+involved. The creation of a widely recognized and
+successful brand image often requires a huge
+investment in time money and effort.
+
+\subsubsection{Indirect Gain Attacks} 
+The indirect gain attacks are relatively more
+difficult to be identified as they exploit vulnerabilities
+in various components of the system and they are
+usually identified following the system being fully
+operational. For example, an attacker exploits
+vulnerabilities in the protocol or the messages being
+exchanged to/from the smart card.
+\subsubsection{Attacks by Rogue Terminals}
+This is the classical type of attack that alarmed both
+cardholders and card issuers in the past [3]. Whenever
+a smart card is presented to a legitimate terminal, the
+terminal should be trusted that it will perform all the
+operations as expected. For example, consider the case
+of a cardholder buying a ticket from an unattended
+POS terminal in the street. The cardholder is prompted
+to pay £1 for the ticket price but the terminal deducts
+more (e.g. £5) from the purse. It is likely that the
+rogue transaction will be identified when the backoffice
+systems or the cardholder inspects the card log
+files or the card transaction statements/receipts
+respectively, but this may be too late to take effective
+action.
+
+
+\subsubsection{Attacks Against the Terminal and/or
+Interface}
+For terminals that reside under the cardholder’s
+control (e.g. a PC connected reader) there is always the
+risk that the communication might be intercepted
+and/or manipulated. However, if the communication
+protocol and the applications are properly designed and
+communication is adequately protected (e.g. encrypted
+or signed) the likelihood and the effects of an attack
+are minimised.\newline
+Irrespectively of the terminal characteristics or the
+relevant cardholder control, there is the risk of the card
+being removed from the terminal before the transaction
+is completed. The duration of a typical contactless
+transaction in a transport application may be between
+140-300ms. This means that the time frame, that an
+attack can be mounted, is relatively small. In cases
+where the terminal is not under the immediate control
+of the cardholder (e.g. entry gates or POS) it becomes
+even more difficult to control the timing of such an
+attack. Moreover, most of the cards provide the
+functionality of transaction atomicity. This means
+that well designed applications will guarantee that
+transactions will either take place in full or do not take
+place at all.
+
+\subsection{Non-technical Challenges}
+\begin{itemize}
+\item Cost: One of the main limitations is the cost of replacing the
+existing infrastructure, with smart card. 
+\item Data management: Management and proper monitoring of collected data is a major challenge. Lack of proper equipment and manpower could hamper the whole system.
+\ Public reaction and new technologies: An obstacle that must be overcome is some involved
+parties reactions to the implementation of a smart card.
+The technical training needed to operate it, the system's high
+complexity and security concerns.
+
+\end{itemize}
+
+
+
+
+
+
+
+
 \section{Enhancements Required for M2M Mass Market}
 A Smart card to be used in mass-market M2M applications would have to support the requirements of long life-time with long maintenance intervals, non-removability, remote download of operator’s authentication application and remote change of operator. Some very significant enhancements need to be considered as follows:
 
@@ -312,7 +525,7 @@ would be downloaded to the TRE over public IP networks.
 
 \end{itemize}
 
-A framework of standardised specifications is needed for the above solutions. The discussion within standardization about the (dis-)advantages of the various candidate solutions is lively and far from concluded.
+A framework of standardised specifications is needed for the above solutions. The discussion within standardization about the (dis-)advantages of the various candidate solutions is lively and far from concluded. Figure \ref{tre} shows the proposed structure.
 
 \begin{figure}[!t]
 \centering
@@ -354,6 +567,33 @@ No solution comes out as perfect, but the TRE shows promise if it can be standar
 
 \subsection{Secure Interface to Terminal}
 Support for a secure terminal-UICC interface may be a requirement, as discussed above.
+
+\subsection{Smart Card Distribution and Storage}
+Smart Card Distribution and Storage should
+always be considered as a sensitive process. Especially
+within the transport industry where smart cards will
+have to be transported pre-personalised within various
+sites, e.g. from the manufacturer to the issuer and from
+the issuer to the various storage locations at the various
+points of sale. Therefore, card transportation and
+distribution should always take place via approved
+couriers.
+Furthermore, if the keys used for card enablement (e.g.
+in order to protect the cards during their transportation
+through various sites) remain secret then the cards will
+remain relatively secure.
+
+\subsection{Smart Card Destruction and Replacement}
+It must be guaranteed that the
+selected cards are properly disposed of and furthermore
+any residual value within the electronic purses is
+properly reclaimed. The monetary refunds procedures
+should be adequate in order to prevent staff from
+exploiting residual value stored in lost or non working
+cards, or even attackers picking old cards and creating
+disposal clones.
+
+
 
 \newpage
 \begin{thebibliography}{9}
