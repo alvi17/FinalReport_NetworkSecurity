@@ -140,7 +140,7 @@ Smart card is  small embedded computer. More specifically, its a built-in microp
 
 \end{figure}
 
-Figure \ref{smart_card} is the smart card that was used for health insurance in France in early 90s. 
+Figure \ref{smart_card} shows the basic structure of a smart card. 
 
 
 \subsection{Machine to Machine(M2M) Communication}
@@ -228,7 +228,7 @@ Global Platform has specifications that define security domains on a Javacard sm
 \subsection{Smart Cards in the Public Transport Industry}
 The advantages of utilising smart card technology,
 more importantly contactless smart cards, in the
-transport industry have long been realised. Some key motivations for smart card based transport industry includes:
+transport industry have long been realised.\cite{ref4} Some key motivations for smart card based transport industry includes:
 \begin{itemize}
 \item Low Cost Smart/Chip Card Technology
 \item Contactless Smart Card Technology
@@ -250,7 +250,7 @@ potential to enhance the services offered by the
 healthcare industry, towards increasing productivity,
 lowering costs, reducing medication errors, increasing
 transparency and fraud detection and easing the manpower
-shortage in healthcare.
+shortage in healthcare.\cite{ref_2}
 Some examples of smart card based healthcare system are:
 \subsubsection{Gesundheitskarte}
 Started in Germany in 2006. Data in the smart card includes e-Prescription,
@@ -365,7 +365,7 @@ loaw cost equipment [13] and other require
 sophisticated and expensive equipment. Typical
 attacks, in the latter category, include attempts to read
 the contents of the EEPROM memory of the card (by
-using powerful electron microscopes) [7], to re-activate
+using powerful electron microscopes), to re-activate
 burned fuses by focusing ion beams or even using laser
 cutter microscopes to modify the architecture of the
 chip. In most cases a number of chips may have to be
@@ -383,6 +383,8 @@ whether a criminal group can find a business case to
 justify the cost and effort required for such an attack.
 
 
+
+
 \subsubsection{Side-Channel Attacks}
 Side channel attacks have been off concern to the
 smart card industry because they require modest levels
@@ -390,7 +392,7 @@ of equipment and do not necessarily damage the card.
 The majority of attacks have monitored the supply
 current of the working smart card in order to infer how
 particular processes run and to extract secret
-information such as keys stored on the card [9]. Similar
+information such as keys stored on the card. Similar
 results have been obtained in laboratory conditions by
 carefully positioning a tiny antenna over certain areas
 of a smart card chip. Attacks can be applied to
@@ -494,11 +496,23 @@ complexity and security concerns.
 
 \end{itemize}
 
+\section{Known Attacks Against Smartcards}
+Smart Card technology had experienced some crises in the past, as follows:
+\subsection{Side Channel Attacks (specifically Power Analysis)}
+This type of attack relies on the noise on the smart card’s power contact being correlate-able with the processing that is going on in the UICC, especially when it is reading the values of a secret key into its internal registers. This can work well on an unprotected card that uses the DES algorithm. RSA is not susceptible and neither is AES (upon which 3GPP Milenage is based).\footnote{This attack was successfully perpetrated against the pilot of a well publicised smart card payment system in the UK. Although the scheme was designed to use RSA with unique private keys, the pilot used DES with a global key on every card.} It is easy to prevent this type of attack at the design stage of a smart card. The physical structure of an embedded TRE would be such that it would not leak this information. There would be no such interface that an attacker could monitor and the processing in the TRE would be such that any noise occurring on any power rail would not contain any recoverable information.
+\subsection{Probing of Broadcast TV Cards}
+Satellite TV smart cards have to contain global decryption keys, due to the nature of the service, i.e. a broadcast encrypted signal. If you crack one card, you have cracked the whole scheme. This is, of course, not true of networked telecoms systems.
 
-
-
-
-
+\subsection{Cloning of SIM cards}
+The only verifiable instance of cloning of 2G SIM cards was a "known plaintext" (50,000 challenge-response pairs) attack against the COMP128 authentication algorithm and not against the card platform itself. This attack has been prevented by the use of better algorithms and is not at all possible with 3G. The relevance of this attack to TREs is that it has gone down in the annals of urban mythology as an attack on the SIM card, rather than an attack on the algorithm. "Mud sticks", as they say.
+\subsection{Others}
+Some other known smart card attacks include:
+\begin{itemize}
+\item Attacks Against Disposable "Eurochip" Phonecards
+\item Timing Attack on RC5 \cite{timing_attack}
+\item EEPROM Alteration by BUS probing \cite{probing_attack}
+\item Depackaging \cite{probing_attack}
+\end{itemize}
 
 
 \section{Enhancements Required for M2M Mass Market}
@@ -525,7 +539,7 @@ would be downloaded to the TRE over public IP networks.
 
 \end{itemize}
 
-A framework of standardised specifications is needed for the above solutions. The discussion within standardization about the (dis-)advantages of the various candidate solutions is lively and far from concluded. Figure \ref{tre} shows the proposed structure.
+A framework of standardised specifications is needed for the above solutions. The discussion within standardization about the (dis-)advantages of the various candidate solutions is lively and far from concluded. A TRE(Trusted Environment) based solution is proposed. Figure \ref{tre} shows the proposed structure.
 
 \begin{figure}[!t]
 \centering
@@ -536,15 +550,12 @@ A framework of standardised specifications is needed for the above solutions. Th
 
 \end{figure}
 
-
-% Please add the following required packages to your document preamble:
-% \usepackage{graphicx}
 \begin{table}[]
 \centering
 
 \begin{tabular}{|L{4cm}|L{4cm}|L{2cm}|L{2cm}|}
 \hline
-\textbf{Required Feature} & \textbf{UICC} & \textbf{TRE} & \textbf{SMC} \\ \hline
+\textbf{Required Feature} & \textbf{UICC \cite{uicc}} & \textbf{TRE} & \textbf{SMC \cite{smc}} \\ \hline
 Currently standardised & good & medium (it could be based partly on TCG specs) & medium \\ \hline
 Currently available & good & medium (some limited versions available) & poor \\ \hline
 Protection against unauthorised removal & poor (good, if M2M form factor UICC is soldered in) & good & poor \\ \hline
@@ -594,14 +605,86 @@ cards, or even attackers picking old cards and creating
 disposal clones.
 
 
+\section{Future Works}
+Our future work concerns the integration of fault effect
+analysis into our reader/smart card system exploration framework in M2M.
+This is accomplished by adding emulation-based fault
+injection techniques. Thus, faults affecting the reader's or the
+smart card's functionality, performance, power consumption,
+and power supply can be evaluated early during the design
+phase.
+
+
+\section{Conclusion}
+From a technology point of view all the components
+that assist the deployment of smart cards in the
+M2M mobile networks are available. Selecting the best
+available technology will probably reduce certain risks
+but at the same time will increase the overall cost of a
+migration program. Furthermore, the proper system
+integration, installation and operation should be
+considered as critical phases.
+\newline
+Smart cards tend to be replaced every 2-3 years, in order to catch up with
+recent technological developments. Selecting the
+appropriate smart card technology is a very critical step
+for the transport operator as the appropriate balance
+between price and offered technology should be
+identified. Similarly, there are other issues (backoffice
+systems, station gating, POS terminals, third
+party applications, etc.) that will have to be considered
+for an effective chip migration. With proper installation and system architecture smart card in M2M mobile systems, can serve a long way to facilitate us.
+
 
 \newpage
 \begin{thebibliography}{9}
-\bibitem{latexcompanion} 
-E. Bonabeau, M. Dorigo, and G. Theraulaz. Swarm intelligence:
-from natural to artificial intelligence. Oxford University
-Press, 1999. ISBN 0-19-513158-4.
+
+\bibitem{main_paper}
+\textbf{Security Aspects of Smart Cards in Machine-to-Machine (M2M) Advanced Mobile Network Applications.}
+Mike Meyerstein1, Inhyok Cha, Yogendra Shah
+
+\bibitem{ref_2}
+Smart Cards in Healthcare Information Systems: Benefits and
+Limitations
+Anastasis P. Keliris, Vassileios D. Kolias and Konstantina S. Nikita.IEEE Veh. Technol. Mag., vol. 8, pp. 24-30, Mar. 2014
+\bibitem{ref3}
+H. Cripps, C. Standing and V. Prijatelj, "Smart health care cards: Are
+they applicable in the Australian context?", presented at the 25th Bled
+eConference,2012
+
+\bibitem{ref4}
+Overview of Security Threats for Smart Cards in the Public Transport
+Industry.Konstantinos Markantonakis, Keith Mayes,Konstantinos Markantonakis, Keith Mayes,Konstantinos Markantonakis, Keith Mayes
+
+\bibitem{timing_attack}
+A Timing Attack on RC5, By Helena Handschuh and Howard M. Heys
+
+\bibitem{probing_attack}
+Probing Attacks on Tamper-Resistant Devices, By Helena Handschuh, Pascal
+Paillier and Jacques Stern
+
+\bibitem{java_card}
+Java community specification JSR177: Security And Trust Services API
  
+\bibitem{iso_1}
+ISO/IEC 7816-1, "Identification cards – Integrated circuit(s)
+cards with contacts" 
+
+\bibitem{uicc}
+3GPP TS 31.102; Characteristics of the USIM Application
+3 3GPP
+\bibitem{smc}
+3GPP TS 31.103; Characteristics of the ISIM Application
+\bibitem{esmi}
+ETSI TS 102 221: UICC-Terminal interface; Physical and logical characteristics
+
+\bibitem{fina_ref}
+S. Mangard M. Hutter and Martin M. Feldhofer.
+Power and emattacks on passive 13.56 mhz rfid devices. In
+Workshop on Cryptographic Hardware and Embedded
+Systems, CHES 2007, volume 4727 of LNCS, pages 320–333.
+Springer-Verlag, September 2007.
+
 \end{thebibliography}
 
 

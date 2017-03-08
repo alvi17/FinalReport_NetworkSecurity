@@ -37,11 +37,18 @@
 \contentsline {subsubsection}{\numberline {8.1.6}Attacks by Rogue Terminals}{15}
 \contentsline {subsubsection}{\numberline {8.1.7}Attacks Against the Terminal and/or Interface}{16}
 \contentsline {subsection}{\numberline {8.2}Non-technical Challenges}{16}
-\contentsline {section}{\numberline {9}Enhancements Required for M2M Mass Market}{17}
-\contentsline {subsection}{\numberline {9.1}Security Domains}{17}
-\contentsline {subsection}{\numberline {9.2}Removable UICC vs. Downloadable UICC}{17}
-\contentsline {subsection}{\numberline {9.3}Secure Download Protocols}{17}
-\contentsline {subsubsection}{\numberline {9.3.1}Options for Secure Downloadable Identity}{18}
-\contentsline {subsection}{\numberline {9.4}Secure Interface to Terminal}{18}
-\contentsline {subsection}{\numberline {9.5}Smart Card Distribution and Storage}{18}
-\contentsline {subsection}{\numberline {9.6}Smart Card Destruction and Replacement}{20}
+\contentsline {section}{\numberline {9}Known Attacks Against Smartcards}{17}
+\contentsline {subsection}{\numberline {9.1}Side Channel Attacks (specifically Power Analysis)}{17}
+\contentsline {subsection}{\numberline {9.2}Probing of Broadcast TV Cards}{17}
+\contentsline {subsection}{\numberline {9.3}Cloning of SIM cards}{17}
+\contentsline {subsection}{\numberline {9.4}Others}{18}
+\contentsline {section}{\numberline {10}Enhancements Required for M2M Mass Market}{18}
+\contentsline {subsection}{\numberline {10.1}Security Domains}{18}
+\contentsline {subsection}{\numberline {10.2}Removable UICC vs. Downloadable UICC}{18}
+\contentsline {subsection}{\numberline {10.3}Secure Download Protocols}{19}
+\contentsline {subsubsection}{\numberline {10.3.1}Options for Secure Downloadable Identity}{19}
+\contentsline {subsection}{\numberline {10.4}Secure Interface to Terminal}{21}
+\contentsline {subsection}{\numberline {10.5}Smart Card Distribution and Storage}{21}
+\contentsline {subsection}{\numberline {10.6}Smart Card Destruction and Replacement}{22}
+\contentsline {section}{\numberline {11}Future Works}{22}
+\contentsline {section}{\numberline {12}Conclusion}{22}
